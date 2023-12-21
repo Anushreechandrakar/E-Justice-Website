@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+    nav{
+    width: 100%;
+    height: 65px;
+    padding: 10px 0px;
+    border-color: rgb(4, 6, 6);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    background-color: rgb(1, 6, 6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav .menu{
+        max-width: 1200px;
+        margin: 2px 0px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 0 30px;
+    }
+    .menu .logo a{
+        text-decoration: none;
+        font-size: 39px;
+        font-style:Andale Mono;
+        font-weight: 600;
+        color: rgb(253, 254, 254);
+    } 
+     
+    .menu ul{
+        display: inline-flex;
+    }
+    .menu ul li{
+    list-style: none;
+    margin-left: 50px;
+    }
+    .menu ul li a{
+    text-decoration: none;
+    color: #150303; 
+    font-size: 24px;
+    background-color: aliceblue;
+    border-radius: 6px;
+    font-style: bold;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+
+
+
+    
+    .menu ul li a:hover{
+        background: rgb(5, 8, 8);
+        color: rgb(255, 254, 253);
+    }
+    .form-container {
+            max-width: 40px;
+            margin: 0 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .heading2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .input-field {
+            width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #9b9797;
+            border-radius: 30px;
+        }
+
+        .textarea-field {
+            width: 700px;
+            height: 180px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #9f9a9a;
+            border-radius: 20px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .bttn {
+            background: rgb(62, 132, 202);
+            color: rgb(255, 254, 253);
+            padding: 10px 20px;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #search-bar {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    margin-left:320px;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: rgb(10, 8, 6);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: rgb(5, 8, 8);
+}
+         
+        .footer {
+    background-color: #050000;
+    color: #fff;
+    margin-top: 28px;
+    padding: 10px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%; 
+    padding: 0 15px;
+    box-sizing: border-box; 
+}
+
+.footer .title_footer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .anchor_footer {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer .anchor_footer:hover {
+    text-decoration: underline;
+}
+        
+       
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#"><b>e-Justice</b></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <ul>
+                <li class="faq"><a href="#"><b>Help</b></a></li>
+                <li><a href="#"><i class="fas fa-bell "></i></a></li>
+                <li><a href="Profile.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+        
+        </nav>  
+    <div class="contactbox">
+        <div class="res"><h3>User Complaint</h3></div>
+        <form>
+            <div>
+                <input type="text" class="input-field" id="first" placeholder="First Name">
+                <input type="text" class="input-field" id="last" placeholder="Last Name">
+            </div>
+            <input type="text" class="input-field" id="contact" placeholder="Contact Number">
+            <div>
+                <div class="heading2">Address</div>
+                <input type="text" class="input-field" id="location" placeholder="Location">
+                <input type="text" class="input-field" id="Crime" placeholder="Crime Location">
+                <div>
+                    <input type="text" class="input-field" id="city" placeholder="City/Town">
+                    <input type="text" class="input-field" id="Postal" placeholder="Postal Code">
+                </div>
+            </div>
+            <div>
+                <div class="heading2">Statement</div>
+    
+                <select id="crime" class="input-field">
+                    <option value="Casetype">Casetype</option>
+                    <option value="Rape">rape</option>
+                    <option value="murder">Murder</option>
+                    <option value="theft">Theft</option>
+                    <option value="divorce">Divorce</option>
+                    <option value="others">Others</option>
+                </select>
+                <button type="button" class="bttn">Download</button>
+            </div>
+            <textarea type="text" id="area" class="input-field textarea-field" placeholder="Advisory"></textarea>
+            <div class="btn-container">
+                <button type="button" class="bttn">Download</button>
+                <button type="button" class="bttn">Update</button>
+                <button type="button" class="bttn">Drop</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 class="title_footer">My Account</h3>
+                <a class="anchor_footer" href="">Logout</a>
+                <br>
+                <a class="anchor_footer" href="">KYC</a>
+            </div>
+            <div class="col-lg-3">
+                <h3 class="title_footer">About</h3>
+                <a class="anchor_footer" href="">Status</a>
+                <br>
+            </div>
+            <div class="col-lg-3">
+                <h3 class="title_footer">Policies</h3>
+                <a class="anchor_footer" href="">Terms of use</a>
+                <br>
+                <a class="anchor_footer" href="">Code of conduct</a>
+                <br>
+                <a class="anchor_footer" href="">Privacy Policy</a>
+            </div>
+            <div class="col-lg-3">
+                <h3 class="title_footer">Download our app</h3>
+                <a class="anchor_footer" href="">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+    <script src="Useregister.js"></script>
+
+</body>
+</html>

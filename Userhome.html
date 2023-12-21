@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        nav{
+        width: 100%;
+        height: 65px;
+        padding: 10px 0px;
+        border-color: rgb(4, 6, 6);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        background-color: rgb(1, 6, 6);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        nav .menu{
+            max-width: 1200px;
+            margin: 2px 0px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 0 30px;
+        }
+        .menu .logo a{
+            text-decoration: none;
+            font-size: 39px;
+            font-style:Andale Mono;
+            font-weight: 600;
+            color: rgb(253, 254, 254);
+        } 
+         
+        .menu ul{
+            display: inline-flex;
+        }
+        .menu ul li{
+        list-style: none;
+        margin-left: 50px;
+        }
+        .faq a{
+        text-decoration: none;
+        color: #150303;
+        font-size: 24px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        font-style: bold;
+        font-weight: 500;
+        padding: 8px 15px;
+    }
+    .bell a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 24px;
+        border-radius: 20px;
+        font-style: bold;
+        font-weight: 500;
+        padding: 8px 15px;
+    }
+        .menu ul li a:hover{
+            background: rgb(5, 8, 8);
+            color: rgb(255, 254, 253);
+        }
+        .wo{
+            margin-top:10px;
+            margin-left: 0px;
+            display: inline flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    .wo img {
+    width: 306px; 
+    height: 275px; 
+    margin-right: 10px; 
+}
+form{
+        margin-left:340px;
+        margin-top: 60px;
+    }
+
+    .bttn{
+        border-radius: 18px;
+        color:rgb(251, 250, 250);
+        margin-top:0px;
+        font-size: 19px;
+        align-items: center;
+        display: inline-flex;
+        padding: 12px 12px;
+        background-color: rgb(10, 8, 6);
+        margin-right: 20px; 
+    }
+    .footer {
+    margin-top: 100px;
+    background-color: #050000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%; 
+    padding: 0 15px;
+    box-sizing: border-box; 
+}
+
+.footer .title_footer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .anchor_footer {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer .anchor_footer:hover {
+    text-decoration: underline;
+}
+           
+        </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#"><b>e-Justice</b></a>
+            </div> 
+            <ul>
+                <li class="faq"><a href="#"><b>Contact</b></a>
+                </li>
+                <li class="faq"><a hreg="#"><b>FAQ</b></a></li>
+               <li class="bell"><a href="#"><i class="fas fa-bell "></i></a></li>
+                <li class="bell"><a href="Profile.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+            <div class="wo">
+                <span><img src="hammer.jpg"></span>
+                <span><img src="knife.jpg"></span>
+                <span><img src="woman.jpg"></span>
+                <span><img src="time.jpg"></span>
+            </div>
+            <h2 style="display: flex;justify-content: center; align-items: center;font-family: sans-serif;">Dharmo Rakshati Rakshitah</h2>
+            <form>
+               <div><a href="Useregister.html"><button type="button" class="bttn">Register Your Case</button></a>
+                <button type="button" class="bttn">Case Status</button>
+                <button type="button" class="bttn">Ticket Number</button></div>
+            </form>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h3 class="title_footer">My Account</h3>
+                        <a class="anchor_footer" href="">KYC</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="title_footer">About</h3>
+                        <a class="anchor_footer" href="">Status</a>
+                        <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="title_footer">Policies</h3>
+                        <a class="anchor_footer" href="">Terms of use</a>
+                        <br>
+                        <a class="anchor_footer" href="">Code of conduct</a>
+                        <br>
+                        <a class="anchor_footer" href="">Privacy Policy</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="title_footer">Download our app</h3>
+                        <a class="anchor_footer" href="">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+</body>
+</html>
